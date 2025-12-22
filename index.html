@@ -64,13 +64,19 @@ h1 { color: #333; margin-bottom: 20px; }
     h1 {
         font-size: 22px;
     }
-    p {
-        font-size: 15px;
-        text-align: justify;
-        text-justify: inter-word; /* Kelime aralarını dengele */
-        hyphens: auto;
-        word-break: break-word;
-    }
+    p { 
+    color: #666; 
+    line-height: 1.6; 
+    text-align: justify;
+    
+    /* Tireleme ve Boşluk Engelleme Kodları */
+    -webkit-hyphens: auto; /* Safari için */
+    -ms-hyphens: auto;     /* Internet Explorer için */
+    hyphens: auto;         /* Standart */
+    
+    word-break: break-word; /* Kelime çok uzunsa böl */
+    text-justify: inter-word; /* Kelime aralarını daha insancıl açar */
+}
 }
 </style>
 </head>
