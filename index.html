@@ -23,8 +23,20 @@ body {
     box-sizing: border-box;
 }
 
-h1 { color: #333; }
-p { color: #666; line-height: 1.6; text-align: justify; }
+h1 { color: #333; margin-bottom: 20px; }
+
+        p { 
+            color: #666; 
+            line-height: 1.6; 
+            /* İki yana yasla */
+            text-align: justify; 
+            /* Boşlukları optimize et */
+            text-justify: inter-word; 
+            /* Kelimeleri heceleyerek böl ve aralıkları daralt */
+            hyphens: auto; 
+            -webkit-hyphens: auto;
+            word-spacing: -1px; 
+        }
 
 #redirectToSurvey {
     background-color: #4285f4; 
